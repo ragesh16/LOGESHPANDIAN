@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logeshpandian Real Estate — Private Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <!-- SWAP: replace assets/tree-hero.jpg with your own hero photo -->
+  <header class="hero" id="top">
+    <div class="hero__image" style="background-image:url('assets/tree-hero.jpg')"></div>
+    <div class="hero__scrim"></div>
+    <nav class="hero__nav">
+      <span class="hero__mark">LP</span>
+      <a href="#contact" class="hero__nav-link">Enquire</a>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Private Property Portfolio</p>
+      <h1 class="hero__title">Homes Built on<br>Solid Ground.</h1>
+      <p class="hero__sub">Logeshpandian Real Estate brings serious buyers a hand-picked collection of homes and land in Bodinayakanur — where every deal is rooted in trust.</p>
+      <a href="#collection" class="hero__cta">View the collection</a>
+    </div>
+    <div class="hero__scroll-hint">Scroll</div>
+  </header>
+
+  <!-- ============ INTRO STRIP ============ -->
+  <section class="intro">
+    <p>Every property here has been walked, measured, and vetted personally before it reaches this page — this is not a public listing site, it is a hand-picked portfolio shared directly with serious buyers.</p>
+  </section>
+
+  <!-- ============ COLLECTION ============ -->
+  <section class="collection" id="collection">
+    <div class="collection__head">
+      <h2>The Collection</h2>
+      <p>One property currently featured. More holdings are added here as they're confirmed.</p>
+    </div>
+
+    <div class="collection__grid" id="propertyGrid">
+      <!-- Property cards are injected by script.js from the data below -->
+    </div>
+  </section>
+
+  <!-- ============ PROPERTY DETAIL MODAL ============ -->
+  <div class="modal" id="propertyModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close">&times;</button>
+      <div class="modal__body" id="modalBody">
+        <!-- Injected by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__brand">
+        <span class="contact__mark">LP</span>
+        <h3>Logeshpandian<span>Real Estate</span></h3>
+      </div>
+      <div class="contact__details">
+        <div class="contact__row">
+          <span class="contact__label">Call</span>
+          <a href="tel:+916379046447">+91 63790 46447</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">Visit</span>
+          <address>
+            No. 167, Paramasivan Kovil Street,<br>
+            Naga Pattarai Sandhu, Bodinayakanur,<br>
+            Tamil Nadu – 625513
+          </address>
+        </div>
+      </div>
+    </div>
+    <p class="contact__foot">&copy; <span id="year"></span> Logeshpandian Real Estate. Shared privately — not for public distribution.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
